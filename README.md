@@ -1,4 +1,4 @@
-# 🎓 Typst Vorlage – Fernuni Hagen (Lineare Algebra)
+# 🎓 Typst Vorlage – Fernuni Hagen Einsendeaufgaben 
 
 Eine minimalistische, aber professionelle Vorlage für Einsendeaufgaben  
 der Fernuni Hagen.
