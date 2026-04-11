@@ -1,42 +1,27 @@
-# 🎓 Typst Vorlage – Fernuni Hagen Einsendeaufgaben 
+# 🎓 Typst Vorlage – Fernuni Hagen
 
-Eine minimalistische, aber professionelle Vorlage für Einsendeaufgaben  
-der Fernuni Hagen.
+Vorlage für Einsendeaufgaben im Modul  
+**Einführung in die lineare Algebra**.
 
-Optimiert für die Nutzung in **typst.app** – jede Aufgabe als eigene PDF.
-
----
-
-## 📸 Vorschau
-
-![Preview](preview.png)
+Optimiert für typst.app – jede Aufgabe als eigene PDF.
 
 ---
 
-## 🚀 Schnellstart (unter 1 Minute)
+## 🚀 Nutzung
 
-1. **Download**
-   - Klick auf „Code“ → „Download ZIP“
-
-2. **Öffne typst.app**
-   👉 https://typst.app
-
-3. **Neues Projekt erstellen**
-
-4. **Dateien per Drag & Drop hochladen**
-
-5. **Beispiel öffnen**
-   - `examples/EA1_A1.typ`
-
-6. **PDF exportieren** ✅
+1. Repository herunterladen
+2. https://typst.app öffnen
+3. Neues Projekt erstellen
+4. Dateien hochladen
+5. `A1.typ`–`A4.typ` bearbeiten
+6. PDF exportieren
 
 ---
 
-## ✏️ Nutzung
+## ✏️ Neue Einsendeaufgabe
 
-In jeder Datei musst du **nur den Inhalt ändern**:
+1. Projekt duplizieren
+2. In `template.typ` ändern:
 
 ```typst
-#aufgabe(meta, "1", [
-  ...
-])
+einsende: "Einsendeaufgabe 2"
