@@ -2,7 +2,7 @@
   name: "Max Mustermann",
   matrikel: "1234567",
   modul: "Einführung in die lineare Algebra",
-  einsende_nr: "1",
+  einsende: "Einsendeaufgabe 1", // 👉 nur hier ändern für EA2, EA3, ...
   datum: "01.05.2026",
 )
 
@@ -18,9 +18,7 @@
   line-height: 1.5,
 )
 
-#set math(
-  style: "display",
-)
+#set math(style: "display")
 
 // ---------- Kopf-/Fußzeile ----------
 #let layout(meta) = {
@@ -29,7 +27,7 @@
       #box(height: 1.5em)[
         #text(size: 8.5pt, fill: gray)[
           #meta.name — Matrikel: #meta.matrikel \
-          #meta.modul — EA #meta.einsende_nr
+          #meta.modul — #meta.einsende
         ]
       ]
     ],
@@ -53,7 +51,7 @@
     #v(2.5cm)
 
     #text(size: 22pt, weight: "bold")[
-      Einsendeaufgabe #meta.einsende_nr
+      #meta.einsende
     ]
 
     #v(0.5em)
@@ -108,11 +106,11 @@
 }
 
 // ---------- Hauptfunktion ----------
-#let aufgabe(meta, aufgabe_nr, body) = {
-  #deckblatt(meta, aufgabe_nr)
+#let aufgabe(meta, nr, body) = {
+  #deckblatt(meta, nr)
   #layout(meta)
 
-  #heading(level: 1)[Aufgabe #aufgabe_nr]
+  #heading(level: 1)[Aufgabe #nr]
   #body
 }
 
